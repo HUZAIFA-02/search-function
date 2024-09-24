@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styl.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo"><a href="index.html">LOGO</a></div>
+            <div class="nav-links">
+                <div class="slidebar-logo">
+                    <span class="logo_name">logo</span>
+                    <i class='bx bx-x'></i> 
+                </div>
+                <ul class="links">
+                    <li>
+                        <a href="#">categories</a>
+                        <i class='bx bx-chevron-down arrow cat-arrow' ></i>
+                        <ul class="cat-sub-menu sub-menu">
+                            <li><a href="#tshirt">tshirt </a></li>
+                            <li><a href="#crop">CROP  </a></li>
+                            <li><a href="#Jacket">jacket </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">upcoming</a></li>
+                    <li><a href="wholsale.html">wholesale</a></li>
+                    <li><a href="about.html">about us</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                </ul>
+            </div>
+            <div style="display: flex;justify-content: center;align-items: center;">
+                <div class="cart-item">
+                    <i class='bx bx-shopping-bag' id="cart-icon">
+                        <span id="cart-count" class="cart-count">0</span>
+                    </i>
+                </div>
+                <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <div class="input-box">
+                        <input type="text" name="" id="find"
+                            placeholder="search here ....." onkeyup="search()">
+                    </div>
+                </div>
+            </div>
+            <div class="cart">
+                <h2 class="cart-title">YOUR CART</h2>
+                <div class="cart-content">
+        
+                </div>
+                <div class="total">
+                    <div class="total-title">TOTAL</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <button type="button" class="btn-buy">BUY NOW</button>
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="conrtainer-fluid">
+        <div class="container">
+            <!-- <div class="search">
+                <h1>All Product</h1>
+                <input type="text" name="" id="find"
+                 placeholder="search here ....." onkeyup="search()">
+
+            </div> -->
+            <div class="product-list">
+                <!-- Product boxes -->
+                
+                <div class="product">
+                    <img src="img/tshirt-6.png" alt="" class="product-img">
+                    <h2 class="product-title">Original Tshirt</h2>
+                    <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>200</span>
+                    <i class='bx bxs-cart-alt add-cart'></i>
+                </div>
+                <div class=" product    ">
+                    <img src="img/tshirt-1.png" alt="" class="product-img">
+                    <h2 class="product-title">fried Sugar TSHIRT</h2>
+                    <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>200</span>
+                    <i class='bx bxs-cart-alt add-cart'></i>
+                </div>
+                <div class="product">
+                    <img src="img/tshirt-2.png" alt="" class="product-img">
+                    <h2 class="product-title">Never stop Tshirt</h2>
+                    <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>200</span>
+                    <i class='bx bxs-cart-alt add-cart'></i>
+                </div>
+                <div class="product">
+                    <img src="img/tshirt-3.png" alt="" class="product-img">
+                    <h2 class="product-title">Lion king TSHIRT</h2>
+                    <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>200</span>
+                    <i class='bx bxs-cart-alt add-cart'></i>
+                </div>
+                <div class="product">
+                    <img src="img/crop-4.png" alt="" class="product-img">
+                    <h2 class="product-title">lilo stich Crop</h2>
+                    <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>200</span>
+                    <i class='bx bxs-cart-alt add-cart'></i>
+                </div>
+                <div class="product">
+                    <img src="img/crop-6.png" alt="" class="product-img">
+                    <h2 class="product-title">Fear Less Crop</h2>
+                    <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>200</span>
+                    <i class='bx bxs-cart-alt add-cart'></i>
+                </div>
+                <div class="product">
+                    <img src="img/crop-7.png" alt="" class="product-img">
+                    <h2 class="product-title">Bonkars crop</h2>
+                    <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>200</span>
+                    <i class='bx bxs-cart-alt add-cart'></i>
+                </div>
+                <div class="product">
+                    <img src="img/tshirt-4.png" alt="" class="product-img">
+                    <h2 class="product-title">Kitty tshirt</h2>
+                    <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>200</span>
+                    <i class='bx bxs-cart-alt add-cart'></i>
+                </div>
+                <!-- <div class="product">
+                    <img src="img/tshirt-8.png" alt="" class="product-img">
+                    <h2 class="product-title">IMAGE-8</h2>
+                    <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>200</span>
+                    <i class='bx bxs-cart-alt add-cart'></i>
+                </div> -->
+                <!-- Add more products as needed -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
